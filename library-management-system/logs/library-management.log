@@ -1,0 +1,124 @@
+2026-01-03 07:58:14 [main] INFO  c.l.LibraryManagementSystemApplication - Starting LibraryManagementSystemApplication using Java 21.0.5 with PID 8009 (/Users/reazulhaque/Documents/GitHub/accordInnovations/library-management-system/target/classes started by reazulhaque in /Users/reazulhaque/Documents/GitHub/accordInnovations/library-management-system)
+2026-01-03 07:58:14 [main] DEBUG c.l.LibraryManagementSystemApplication - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-03 07:58:14 [main] INFO  c.l.LibraryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-03 07:58:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-03 07:58:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2026-01-03 07:58:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8181 (http)
+2026-01-03 07:58:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-03 07:58:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-03 07:58:15 [main] INFO  o.a.c.c.C.[.[localhost].[/library] - Initializing Spring embedded WebApplicationContext
+2026-01-03 07:58:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 841 ms
+2026-01-03 07:58:15 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-03 07:58:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-03 07:58:15 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-03 07:58:15 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-03 07:58:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-03 07:58:15 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2026-01-03 07:58:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-03 07:58:15 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-03 07:58:15 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-03 07:58:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-03 07:58:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-03 07:58:16 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-03 07:58:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-03 07:58:17 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:librarydb'
+2026-01-03 07:58:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8181 (http) with context path '/library'
+2026-01-03 07:58:17 [main] INFO  c.l.LibraryManagementSystemApplication - Started LibraryManagementSystemApplication in 3.369 seconds (process running for 3.719)
+2026-01-03 07:58:17 [main] INFO  com.library.loader.SampleDataLoader - Loading sample data...
+2026-01-03 07:58:17 [main] INFO  com.library.loader.SampleDataLoader - Sample data loaded successfully. Created 4 authors and 6 books.
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  o.a.c.c.C.[.[localhost].[/library] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - === Request Start ===
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - Method: GET
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - URL: http://localhost:8181/library/api/v1/books
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - IP: 0:0:0:0:0:0:0:1
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - Class: com.library.controller.BookController
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - Method: getAllBooks
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - Args: [0, 10, title, ASC]
+2026-01-03 07:58:55 [http-nio-8181-exec-2] INFO  com.library.service.BookService - Fetching all books - page: 0, size: 10
+2026-01-03 07:58:56 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - === Response ===
+2026-01-03 07:58:56 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - Execution Time: 68 ms
+2026-01-03 07:58:56 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - Response: {"headers":{},"body":{"success":true,"message":"Books retrieved successfully","data":{"content":[{"id":1,"title":"1984","isbn":"9780451524935","publicationYear":1949,"authorName":"George Orwell","authorId":1,"genre":"Dystopian","quantity":5,"availableCopies":3},{"id":2,"title":"Animal Farm","isbn":"9780451526342","publicationYear":1945,"authorName":"George Orwell","authorId":1,"genre":"Political Satire","quantity":4,"availableCopies":4},{"id":6,"title":"Harry Potter and the Chamber of Secrets","isbn":"9780747538486","publicationYear":1998,"authorName":"J.K. Rowling","authorId":2,"genre":"Fantasy","quantity":7,"availableCopies":7},{"id":3,"title":"Harry Potter and the Philosopher's Stone","isbn":"9780747532743","publicationYear":1997,"authorName":"J.K. Rowling","authorId":2,"genre":"Fantasy","quantity":8,"availableCopies":6},{"id":5,"title":"The Great Gatsby","isbn":"9780743273565","publicationYear":1925,"authorName":"F. Scott Fitzgerald","authorId":4,"genre":"Tragedy","quantity":7,"availableCopies":5},{"id":4,"title":"To Kill a Mockingbird","isbn":"9780061120084","publicationYear":1960,"authorName":"Harper Lee","authorId":3,"genre":"Southern Gothic","quantity":6,"availableCopies":2}],"pageable":{"pageNumber":0,"pageSize":10,"sort":{"unsorted":false,"sorted":true,"empty":false},"offset":0,"unpaged":false,"paged":true},"totalPages":1,"last":true,"totalElements":6,"numberOfElements":6,"first":true,"size":10,"number":0,"sort":{"unsorted":false,"sorted":true,"empty":false},"empty":false},"statusCode":200},"statusCode":"OK","statusCodeValue":200}
+2026-01-03 07:58:56 [http-nio-8181-exec-2] INFO  com.library.aspect.LoggingAspect - === Request End ===
+2026-01-03 07:58:56 [http-nio-8181-exec-2] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - === Request Start ===
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - Method: GET
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - URL: http://localhost:8181/library/api/v1/books/1
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - IP: 0:0:0:0:0:0:0:1
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - Class: com.library.controller.BookController
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - Method: getBookById
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - Args: [1]
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.service.BookService - Fetching book by id: 1
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - === Response ===
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - Execution Time: 9 ms
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - Response: {"headers":{},"body":{"success":true,"message":"Book retrieved successfully","data":{"id":1,"title":"1984","isbn":"9780451524935","publicationYear":1949,"authorName":"George Orwell","authorId":1,"genre":"Dystopian","quantity":5,"availableCopies":3},"statusCode":200},"statusCode":"OK","statusCodeValue":200}
+2026-01-03 07:58:59 [http-nio-8181-exec-3] INFO  com.library.aspect.LoggingAspect - === Request End ===
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - === Request Start ===
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - Method: POST
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - URL: http://localhost:8181/library/api/v1/books/search
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - IP: 0:0:0:0:0:0:0:1
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - Class: com.library.controller.BookController
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - Method: searchBooks
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - Args: [BookSearchRequest(title=Harry Potter, authorName=null, genre=Fantasy, isbn=null, publicationYear=null, page=0, size=10, sortBy=title, sortDirection=ASC)]
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.service.BookService - Searching books with criteria: BookSearchRequest(title=Harry Potter, authorName=null, genre=Fantasy, isbn=null, publicationYear=null, page=0, size=10, sortBy=title, sortDirection=ASC)
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.service.BookService - Found 2 books matching search criteria
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - === Response ===
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - Execution Time: 38 ms
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - Response: {"headers":{},"body":{"success":true,"message":"Books search completed","data":{"content":[{"id":6,"title":"Harry Potter and the Chamber of Secrets","isbn":"9780747538486","publicationYear":1998,"authorName":"J.K. Rowling","authorId":2,"genre":"Fantasy","quantity":7,"availableCopies":7},{"id":3,"title":"Harry Potter and the Philosopher's Stone","isbn":"9780747532743","publicationYear":1997,"authorName":"J.K. Rowling","authorId":2,"genre":"Fantasy","quantity":8,"availableCopies":6}],"pageable":{"pageNumber":0,"pageSize":10,"sort":{"unsorted":false,"sorted":true,"empty":false},"offset":0,"unpaged":false,"paged":true},"totalPages":1,"last":true,"totalElements":2,"numberOfElements":2,"first":true,"size":10,"number":0,"sort":{"unsorted":false,"sorted":true,"empty":false},"empty":false},"statusCode":200},"statusCode":"OK","statusCodeValue":200}
+2026-01-03 07:59:04 [http-nio-8181-exec-4] INFO  com.library.aspect.LoggingAspect - === Request End ===
+2026-01-03 08:03:27 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-03 08:03:27 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-03 08:03:27 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-03 08:03:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-03 08:03:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-03 08:03:52 [main] INFO  c.l.LibraryManagementSystemApplication - Starting LibraryManagementSystemApplication using Java 17.0.17 with PID 8107 (/Users/reazulhaque/Documents/GitHub/accordInnovations/library-management-system/target/classes started by reazulhaque in /Users/reazulhaque/Documents/GitHub/accordInnovations/library-management-system)
+2026-01-03 08:03:52 [main] DEBUG c.l.LibraryManagementSystemApplication - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-03 08:03:52 [main] INFO  c.l.LibraryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-03 08:03:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-03 08:03:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2026-01-03 08:03:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8181 (http)
+2026-01-03 08:03:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-03 08:03:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-03 08:03:52 [main] INFO  o.a.c.c.C.[.[localhost].[/library] - Initializing Spring embedded WebApplicationContext
+2026-01-03 08:03:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 810 ms
+2026-01-03 08:03:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-03 08:03:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-03 08:03:52 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-03 08:03:53 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-03 08:03:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-03 08:03:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2026-01-03 08:03:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-03 08:03:53 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-03 08:03:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-03 08:03:53 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-03 08:03:53 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-03 08:03:53 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-03 08:03:54 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-03 08:03:54 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:librarydb'
+2026-01-03 08:03:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8181 (http) with context path '/library'
+2026-01-03 08:03:55 [main] INFO  c.l.LibraryManagementSystemApplication - Started LibraryManagementSystemApplication in 3.337 seconds (process running for 3.774)
+2026-01-03 08:03:55 [main] INFO  com.library.loader.SampleDataLoader - Loading sample data...
+2026-01-03 08:03:55 [main] INFO  com.library.loader.SampleDataLoader - Sample data loaded successfully. Created 4 authors and 6 books.
+2026-01-03 08:37:45 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-03 08:37:45 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-03 08:37:45 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-03 08:37:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-03 08:37:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

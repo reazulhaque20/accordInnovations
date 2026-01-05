@@ -13,10 +13,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:8080/library/api/v1/books?page=0&size=10&sortBy=title&sortDir=ASC",
+              "raw": "http://localhost:8181/library/api/v1/books?page=0&size=10&sortBy=title&sortDir=ASC",
               "protocol": "http",
               "host": ["localhost"],
-              "port": "8080",
+              "port": "8181",
               "path": ["library", "api", "v1", "books"],
               "query": [
                 {
@@ -45,10 +45,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:8080/library/api/v1/books/1",
+              "raw": "http://localhost:8181/library/api/v1/books/1",
               "protocol": "http",
               "host": ["localhost"],
-              "port": "8080",
+              "port": "8181",
               "path": ["library", "api", "v1", "books", "1"]
             }
           }
@@ -68,10 +68,10 @@
               "raw": "{\n  \"title\": \"New Book\",\n  \"isbn\": \"1234567890123\",\n  \"publicationYear\": 2023,\n  \"genre\": \"Fiction\",\n  \"quantity\": 5\n}"
             },
             "url": {
-              "raw": "http://localhost:8080/library/api/v1/books",
+              "raw": "http://localhost:8181/library/api/v1/books",
               "protocol": "http",
               "host": ["localhost"],
-              "port": "8080",
+              "port": "8181",
               "path": ["library", "api", "v1", "books"]
             }
           }
@@ -91,10 +91,10 @@
               "raw": "{\n  \"title\": \"Updated Book Title\",\n  \"isbn\": \"1234567890123\",\n  \"publicationYear\": 2023,\n  \"genre\": \"Updated Genre\",\n  \"quantity\": 10\n}"
             },
             "url": {
-              "raw": "http://localhost:8080/library/api/v1/books/1",
+              "raw": "http://localhost:8181/library/api/v1/books/1",
               "protocol": "http",
               "host": ["localhost"],
-              "port": "8080",
+              "port": "8181",
               "path": ["library", "api", "v1", "books", "1"]
             }
           }
@@ -105,10 +105,10 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://localhost:8080/library/api/v1/books/1",
+              "raw": "http://localhost:8181/library/api/v1/books/1",
               "protocol": "http",
               "host": ["localhost"],
-              "port": "8080",
+              "port": "8181",
               "path": ["library", "api", "v1", "books", "1"]
             }
           }
@@ -128,10 +128,10 @@
               "raw": "{\n  \"title\": \"Harry Potter\",\n  \"genre\": \"Fantasy\",\n  \"page\": 0,\n  \"size\": 10,\n  \"sortBy\": \"title\",\n  \"sortDirection\": \"ASC\"\n}"
             },
             "url": {
-              "raw": "http://localhost:8080/library/api/v1/books/search",
+              "raw": "http://localhost:8181/library/api/v1/books/search",
               "protocol": "http",
               "host": ["localhost"],
-              "port": "8080",
+              "port": "8181",
               "path": ["library", "api", "v1", "books", "search"]
             }
           }
@@ -142,10 +142,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:8080/library/api/v1/books/loans/active",
+              "raw": "http://localhost:8181/library/api/v1/books/loans/active",
               "protocol": "http",
               "host": ["localhost"],
-              "port": "8080",
+              "port": "8181",
               "path": ["library", "api", "v1", "books", "loans", "active"]
             }
           }
@@ -161,10 +161,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:8080/library/api/v1/books/external/search?query=java+programming",
+              "raw": "http://localhost:8181/library/api/v1/books/external/search?query=java+programming",
               "protocol": "http",
               "host": ["localhost"],
-              "port": "8080",
+              "port": "8181",
               "path": ["library", "api", "v1", "books", "external", "search"],
               "query": [
                 {
@@ -181,10 +181,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:8080/library/api/v1/books/external/call?url=https://jsonplaceholder.typicode.com/posts/1",
+              "raw": "http://localhost:8181/library/api/v1/books/external/call?url=https://jsonplaceholder.typicode.com/posts/1",
               "protocol": "http",
               "host": ["localhost"],
-              "port": "8080",
+              "port": "8181",
               "path": ["library", "api", "v1", "books", "external", "call"],
               "query": [
                 {
